@@ -1,8 +1,9 @@
 package com.example.recipeapp
 
+import androidx.room.Dao
 import androidx.room.Query
-
+@Dao
 interface Dao {
-    @get:Query("Select * from recipe")
-    var all:List<Recipe?>?
+    @Query("Select * from recipe")
+    fun getAll():List<Recipe?>
 }

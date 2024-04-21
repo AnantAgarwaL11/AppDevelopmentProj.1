@@ -22,7 +22,7 @@ class PopularAdapter(var dataList: ArrayList<Recipe>,var context:Context):Recycl
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         Glide.with(context).load(dataList.get(position).img).into(holder.binding.popularImg)
-        holder.binding.popularTxt.text=dataList.get(position).title
+        holder.binding.popularTxt.text=dataList.get(position).tittle
         var time=dataList.get(position).ing.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
         holder.binding.popularTime.text=time.get(0)
     }
