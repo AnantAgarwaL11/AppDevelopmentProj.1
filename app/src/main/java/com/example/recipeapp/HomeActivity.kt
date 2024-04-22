@@ -1,5 +1,6 @@
 package com.example.recipeapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,6 +18,9 @@ class HomeActivity : AppCompatActivity() {
 
 
         setUpRecyclerView()
+        binding.search.setOnClickListener(){
+            startActivity(Intent(this,SearchActivity::class.java))
+        }
     }
         private fun setUpRecyclerView(){
             dataList= ArrayList()
