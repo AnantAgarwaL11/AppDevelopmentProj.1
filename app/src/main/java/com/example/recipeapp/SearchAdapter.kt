@@ -20,6 +20,10 @@ class SearchAdapter(var dataList: ArrayList<Recipe>,var context: Context):Recycl
     override fun getItemCount(): Int {
         return dataList.size
     }
+    fun filterList(filterList:ArrayList<Recipe>){
+        dataList=filterList
+        notifyDataSetChanged()
+    }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         Glide.with(context).load(dataList.get(position).img).into(holder.binding.searchImg)
