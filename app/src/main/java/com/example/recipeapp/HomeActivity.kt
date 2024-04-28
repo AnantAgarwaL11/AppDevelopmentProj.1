@@ -21,6 +21,30 @@ class HomeActivity : AppCompatActivity() {
         binding.search.setOnClickListener(){
             startActivity(Intent(this,SearchActivity::class.java))
         }
+        binding.salad.setOnClickListener{
+            var myIntent=Intent(this@HomeActivity,CategoryActivity::class.java)
+            myIntent.putExtra("TITTLE","Salad")
+            myIntent.putExtra("CATEGORY","Salad")
+            startActivity(myIntent)
+        }
+        binding.mainDish.setOnClickListener{
+            var myIntent=Intent(this@HomeActivity,CategoryActivity::class.java)
+            myIntent.putExtra("TITTLE","Main Dish")
+            myIntent.putExtra("CATEGORY","Dish")
+            startActivity(myIntent)
+        }
+        binding.drinks.setOnClickListener{
+            var myIntent=Intent(this@HomeActivity,CategoryActivity::class.java)
+            myIntent.putExtra("TITTLE","Drinks")
+            myIntent.putExtra("CATEGORY","Drinks")
+            startActivity(myIntent)
+        }
+        binding.dessert.setOnClickListener{
+            var myIntent=Intent(this@HomeActivity,CategoryActivity::class.java)
+            myIntent.putExtra("TITTLE","Desserts")
+            myIntent.putExtra("CATEGORY","Desserts")
+            startActivity(myIntent)
+        }
     }
         private fun setUpRecyclerView(){
             dataList= ArrayList()
