@@ -8,4 +8,4 @@ Link to my project :https://github.com/AnantAgarwaL11/AppDevelopmentProj.1
 
 # Screenshots
 
-file:///C:/Users/ANANT%20AGARWAL/Downloads/recipeapp.jpg
+![recipeapp](https://github.com/AnantAgarwaL11/AppDevelopmentProj.1/assets/115874061/a5673323-b158-4e3d-a7f9-a91ed6e7a6c7)
